@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{Ejcicios de Grimaldi}
+\author{AUTOR }
+\date{October 2018}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{color}
+\begin{document}
+\maketitle
+\section{Capitulo 7}Relaciones: La segunda vuelta.\\
+1. Proporcione la demostración de la inclusión del teorema $7.1$\\
+\textcolor{red}{Respuesta:\\$(a,b) E (R1 o R2) o R3 -> (a,c) E R1 o R2, (c,d) E R3 de algún c E C -> (a,b) E R1, (b,c) E R2, (c,d) E R3 de algún b E B, c E C -> (a,b) E R1,(b,d) E R2 o R3-> (a,d) E R1 o (R2 o R3), y (R1 o R2) o R3  R1 o (R2 o R3)$
+}\\
+2. Sea  A un conjunto tal que $|A|$ = n y sea $\Re$ una relación sobre A antisimétrica. ¿Cuál es el máximo valor de $|\Re|$ ? ¿Cuántas relaciones antisimétricas pueden tener ese tamaño?\\
+\textcolor{red}{Respuesta:\\El numero de antisimétricas relacionadas que puede tener son de tamaño $2^{(n^2-n)/2}$ 
+}\\
+3. Cuantas matrices (0, 1) de 6 x 6 cumplen que A=a?\\
+\textcolor{red}{Respuesta:\\Aquí las palomas son los enteros 2 + 1 entre 0 y 2, inclusivo, y los casilleros son las 2 relaciones en A
+}\\
+4. Sea n $\in$ Z con n $\succ$ 1y sea Aa el conjunto de los divisores enteros positivos de n. Defina la relación $\Re$ sobre A como x$\Re$y si x divide (exactamente) a y. Determine la cantidad de pares ordenados que hay en la relación de $\Re$ cuando n es (a) 10; (b) 20; (c) 40; (d) 200; (e) 210.\\
+\textcolor{red}{Respuesta:\\C significa combinación\\ 
+(a) C(3,2)*C(3,2) = 9\\ 
+(b) C(4,2)*C(3,2) = 18\\
+(c) C(5,2)*C(3,2) = 30\\
+(d) C(5,2)*C(4,2) = 60\\ 
+(e) C$(3,2)^4$ = 81
+}\\
+5. Si A $=$ (1,2,3,4), dé un ejemplo de una relación $\Re $ sobre A que sea\\
+a) reflexiva y simétrica, pero no transitiva\\
+b) reflexiva y transitiva, pero no simétrica \\
+c) simétrica y transitiva, pero no reflexiva\\
+\textcolor{red}{Respuesta: \\
+(a) [(1,1),(2,2),(3,3),(4,4),(1,2),(2,1),(2,3),(3,2)]\\ 
+(b) [(1,1),(2,2),(3,3),(4,4),(1,2)]\\
+(c) [(1,1),(2,2),(1,2),(2,1)]
+}\\
+6. Para la relación $\Re$ del ejemplo 1 inciso (c) determine:\\
+a) Tres elementos f1, f2, f3 $\Re$ $\Re$ tales que 1 $\leq$ i $\leq$ 3\\
+b) Encuentre tres términos g1, g2, g3 $\Re$ $\Re$ tales que 1 $\leq$ i $\leq$ 3\\
+\textcolor{red}{ Respuesta:\\
+(a) Dejar f1, f2, f3 $\in$ F con $f1(n) = n+1$, $f2(n) = 5n$, y $f3(n) = 4n +1/n$ \\
+(b) Dejar g1, g2, g3 $\in$ F con $g1(n) = 3$, $g2(n) = 1/n$, y $g3(n) = sin(n)$
+}\\
+7. Para la relación (b) del ejemplo anterior determine cinco valores de x para los cuales (x $\in$ $\Re $.\\
+\textcolor{red}{Respuesta:\\-9, -2, 5, 12, 19
+}\\
+8. Si R es una relación reflexiva sobre un conjunto A, demuestre que R2 también es reflexiva sobre A. \\
+\textcolor{red}{Respuesta:\\$x E A reflexiva.->(x,x) E R. (x,x) E R,(x,x) E R->(x,x) E R o R=R^2$
+}\\
+9. Sea A un conjunto tal que $|A|$ = n y sea $\Re$ una relación de equivalencia sobre A tal que $|\Re|$ = r ¿Por qué r-n siempre es par?\\
+\textcolor{red}{Respuesta:\\
+Cuenta los elementos en $\Re$ de la forma (a,b), a$\neq$ b. Como $\Re$ es simétrica, r-n es par
+}\\
+10. Para una relación R sobre un conjunto A, defina R0 = {a, a)|a  A}. Si |A| = n, demuestre que existen s, t N, con 0  s  t  2, tales que R = R.\\
+\textcolor{red}{Respuesta:\\R1 o (R2 n R3)= R2 o {m,3),(m,4)}={(1,3),(1,4)}
+(R1 o R2) n (R1 o R3)= {(1,3),(1,4)} n {(1,3),(1,4) n (1,3),(1,4)} = {(1,3),(1,4)}
+}\\
