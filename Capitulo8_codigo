@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{Ejcicios de Grimaldi}
+\author{AUTOR }
+\date{October 2018}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{color}
+\begin{document}
+\maketitle
+\section{Capitulo 8}El principio de inclusión y exclusión.\\
+1.  Determine el numero de positivos n,$ 1\leq n\leq 2000$,tales que\\
+a) No son divisibles entre 2,3,5 \\b) No son divisibles entre 2,3,5 ni 7 \\c) No son divisibles entre 2,3,5, pero si son divísales entre 7 \\ 
+\textcolor{red}{Respuesta (a):\\$N(c1)=[2000/2]=100\\N(c2)=[2000/3]=666\\N(c3)=[2000/5]=400\\N(c4)=[2000/7]=285\\N(c1,c2)=[2000/6]=333
+\\N(c2,c3)=[2000/15]=133\\N(c1,c3)=[2000/10]=200\\N(c1,c2,c3)=[2000/30]=66\\N(c1,c2,c3)=200-[1000+666+400]+[333+200+133]-66\\N(c1,c2,c3)=534$\\ 
+Respuesta (b):\\$N(c1,c4)=[2000/14]=142\\N(c3,c4)=[2000/35]=57\\N(c2,c4)=[2000/21]=95\\N(c1,c2,c4)=[2000/42]=47\\N(c2,c3,c4)=[2000/105]=19
+\\N(c1,c2,c3,c4)=2000-[1000+600+400+271]+[333+200+133+142+57+95]-[66+47+19]+9=586$\\
+Respuesta (c):\\$N(c4)=1715$
+}\\
+2. ¿De cuantas formas se puede colocar todas las letras de la palabra information de tal manera que ningún par de letras consecutiva aparezca más de una vez?
+[Aqui queremos contar disposiciones como iinnoofrmta y fortmaiinon, pero no inforinmota(donde "n" aparece dos veces) o nortfnoiami(donde "no" aparece dos veces)]\\
+\textcolor{red}{Respuesta:\\$N(c1)=9!\\N(c2)=9!\\N(c1,c2)=7!\\N(c1,c2)=11!-[9!+9!]+7!$
+}
+\\
+3. Encuentre el número de enteros positivos x tales que $x\leq 9999999$ y la suma de los dígitos de x sea igual a 31\\
+\textcolor{red}{ Respuesta:\\Como la suma debe de dar 31, entonces nuestro primera condición es $(37/31)$, de esto cabe que son 4 números que suman 37, entonces los siguientes 3 condiciones queda que $s2=(7/1)(27/21), s3=(7/2)(17/11)=(7/3)(7/1)$, por lo tanto el resultado seria el siguiente\\$N(c1,c2,c3)=s1-s2-s3-s4=(37/31)-(7/1)(27/21)+(7/2)(17/11)-(7/3)(7/3)$
+}
+\\
+4. En su tienda de flores, Margarita desea colocar 15 plantas diferentes en cinco anaqueles del escaparate,¿De cuántas formas puede colocarlas de tal manera que cada anaquel tenga al menos una planta, pero más de cuatro?\\
+\textcolor{red}{Respuesta:\\Como se quiere pasar de cuatro, nuestra máximo de condicionales es 3, por lo tanto el procedimiento seria el siguiente\\
+$(5/0)(14/0)-(5/4)(10/6)+(5/1)(6/2) donde (s/n)$ es el numero de anaqueles y los $(14/10),(10/6),(6/2)$ es el restante de platas a colocar, por lo tanto se multiplica con el factorial de 15.\\$(15!)[(14/10)(5/0)-(5/1)(10/6)-(5/2)(6/2)]$
+}
+\\
+5. Encuentre el número de permutaciones de a,b,c......,x,y,z, de modo que no aparezcan los patrones spin, game, path o net.\\
+\textcolor{red}{Respuesta:\\El numero total de letras en el abecedario es de 26, entonces el procedimiento es el siguiente.\\
+$26!-[3(23!)+24!]+(20!+21!)$
+}
+\\
+6. Si se tiran ocho dados distintos,¿Cuál es la probabilidad de que aparezcan seis números distintos?\\
+\textcolor{red}{Respuesta:\\Son 8 tiros y 6 distintos.Esto se plantea de la siguiente manera.\\$[(6/0)6^8-(6/1)5^8+(6/2)4^8+(6/3)3^8+(6/2)2^8-(6/1)1^8+(6/0)0^8]/6^8$
+}
+\\
+7. Para la situación de los ejemplos 8.6 y 8.7.calcule E, para $0\leq 1 \leq 5$ y muestra que $\sum E=N=151$\\
+\textcolor{red}{Resultado:\\Para $F0=768; E1=205; E2=40; E3=10; E4=0; E5=1$\\Entonces $\sum Ei=768+205+40+10+0+1=1024=N$
+}
+\\
+8. ¿De cuántas formas podemos colocar , las letras de correspondientes de modo que (a) no haya un par de letras idénticas consecutivas?(b) haya exactamente dos pares de letra idénticas consecutivas?(c)haya menos tres pares de letras idénticas consecutivas?\\
+\textcolor{red}{Respuesta(a):\\$(5/0)[14!/2(2!)^5]-(5/1)[13!/(2!)^4+(5/2)[12!/(2!)^3]-(5/3)[11!/(2!)^2]+(5/4)[10!/2!]-(5/5)[9!]$\\Respuesta(b):\\$E2=(5/2)[12!/(2!)^3]-(3/1)(5/3)[11!/(2!)^2]+(4/4)(5/4)[10!/2!]-(5/3)(5/5)*[9!]$\\Respuesta(c):\\
+$L3=(5/3)[11!/(2!)^2]-(3/2)(5/4)[10!/2!]+(4/2)(5/5)[9!]$
+}
+\\
+9. a)¿De cuántas formas se puede distribuir diez premios distintos entre cuatro estudiantes de modo que exactamente dos estudiantes no reciban ninguno?b)¿De cuántas formas puede hacerse esto de modo que al menos dos estudiantes no reciban premio?\\
+\textcolor{red}{Resultado(a):\\$E2=(2/0)[101/(2!)^2]+(2/1)[9!/(2!)^1+(2/2)[8!/(2!)^0]=6132$\\Resultado(b):\\$E2=(2/0)[10!/(2!)^2]-(2/1)[9!/(2!)^1]+
+(2/2)[8!/(2!)^0]=6136$
+}
+\\
+10. ¿De cuantas formas se pueden colocar los enteros 1,2,3,...,10 en una linea de modo que ningún entero par quede en su posición natural?\\
+\textcolor{red}{Esto se restringe a 5 formas, ya que un entero n se puede recorrer a $n+1$ y sucesivamente, y partiendo de 1, entonces $n+1=2$, por lo tanto son pares, $[10/2]=5$, por lo tanto lo siguiente es determinar cuantas formas se colocan.\\$(5/0)10!-(5/1)9!+(5/2)8!-(5/3)7!+(5/4)6!-(5/5)5!$
+}
+\end{document}
