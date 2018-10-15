@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{Ejcicios de Grimaldi}
+\author{AUTOR }
+\date{October 2018}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{color}
+\begin{document}
+\maketitle
+\section{Capitulo 6}Lenguajes: Máquinas de estados finitos.\\
+1. Sea A= (10,11), B(00,1) lenguajes para el alfabeto sumatoria = (0,1) determine lo siguiente:
+a) AB\\
+b) BA \\
+c) $A^3$\\
+d) $B^2$ \\ 
+\textcolor{red}{Respuesta:\\
+a) AB = (1000,101,1100,111)\\
+b) BA = (0010,0011,110,111) \\
+c) $A^3$ = (101010,101011,101110,111010,101111,111011,1111110,111111)\\
+d) $B^2$ = (0000,001,100,11)
+}\\
+2. Para el alfabeto sumatoria =(0,1), sean A, B, C $\subseteq$ sumatoria los siguientes lenguajes:
+A= (0, 1, 00, 11, 000, 111, 0000, 1111),\\
+B= (w $\in$ sumatoria 2 $\leq$ w)\\
+C= (w $\in$ sumatoria 2 $\geq$ w)
+Determine los siguientes subconjuntos(lenguajes) de sumatoria\\
+a) A $\cap$ B\\
+b) A - B \\
+c) A $\bigtriangleup$ B\\
+d) A $\cap$ C \\ 
+e) B $\cap$ C \\
+f) B $\cup$ C 
+\\
+\textcolor{red}{Respuesta:\\
+a) (00,111,000,111,0000,1111)\\
+b) (0,1) \\
+c) sumatoria* -($\lambda$,00,11,000,111,0000,1111)\\
+d) (0,1,00,11) \\ 
+e) sumatoria* \\
+f) sumatoria* - (0,1,00,11)= ($\lambda$,01,10) $\cup$ ( w $\geq$ 3 )
+}\\
+3. Sea sumatoria de (a, b, c, d, e)\\
+a) ¿Cuánto vale al cuadrado y al cubo \\b) ¿Cuántas cadenas de la sumatoria tienen una longitud de al menos cinco? \\ 
+\textcolor{red}{Respuesta(a):\\(a) sumatoria= (a, b, c, d, e) 
+son 5 letras, entonces $(5)^2= 25$; $(5)^3 = 125$ \\ 
+Respuesta(b):\\(b) De i = 0 hasta 5 es la sumatoria es 3906
+}\\
+4. Sea $sumatoria = {v, w, x, y, z}$ y $A= U^6 n=1$ $sumatoria ^n$. ¿Cuántas cadenas de A tienen a xy como prefijo propio? \\
+\textcolor{blue}{Respuesta:\\De $i=1$ hasta 4 es la $sumatoria 5^i$
+}\\
+5. Si x pertenece a la  sumatoria de longitudes y $x^3=36$, ¿Cuánto vale el valor absoluto de x? \\
+\textcolor{red}{ Respuesta:\\$x = 12$
+}\\
+6. Sea M= (S, F, O, v, w) una máquina de estados finitos con f= 0 = {0, 1} y S, v y w determinados por el diagrama de estados:\\
+ a) Encuentre la salida para la cadena de entrada x= 0110111011\\
+b) Si partimos del estado s0 y la salida para la cadena de entrada x es 0000001, determine todas las posibilidades para x.\\
+c) Describa con palabras lo que hace esta máquina de estados finitos.\\ 
+\textcolor{red}{Respuesta:\\ a) Salida= 0000000010\\	b) w=(x ,s0) = 0000001 para x=(1)11111101; (2) 1111011; (3) 1110111; (4) 1101111; (5) 10111111; y (6) 01111111\\		C) Organiza a ocurrencia de 6 en el valor de x
+}\\
+7.Una máquina de estados finitos $M= (S, F, O, v, w)$ tiene $F= 0 = [0, 1]$ y se determina mediante el diagrama de estados que se muestra:\\
+Determine la cadena de salida para para la cadena de entrada 110111, comenzando en S0. ¿Cuál es el último estado de transición?\\
+\textcolor{red}{Respuesta:\\010110}\\
+8. Para la sumatoria de (w, x, y, z)
+determine el número de cadenas de la  sumatoria de longitud cinco (a) que comienzan con w; (b) con precisamente dos w; (c) sin w; (d) con un numero par de w. \\
+\textcolor{red}{Respuesta:\\Consideremos que la sumatoria contiene 4 terminos:\\ (a) $4^4$ \\
+(b) $C(5,2)(3^3)$\\
+(c) $3^5$ \\
+(d) $3^5$ + $C(5,2)(3^3)$ + $C(5,4)(3)$
+}\\
+9. La máquina M tiene f= [0, 1] = 0 y se determina mediante el diagrama de estados.\\
+a) Describa con palabras lo que hace esta máquina de estados finitos\\ 
+b) ¿Qué debe recordar el estado s1?\\
+c) Encuentre dos lenguajes A, B  f* tales que para cada x  AB, w(s0, x) tiene a 1 como un sufijo\\
+\textcolor{red}{Respuesta:\\a) Reorganiza (Con una salida de 1) todos los 0 que le preceden de otro 0
+}\\
+10. Sea  sumatoria un alfabeto. Sea xi $\in$ sumatoria para  1 $\leq$ i $\leq$ 100 (donde xi es diferente que xj, para cualquier  1 $\leq$ j $\leq$ 100). ¿Cuántas sub-cadenas no vacías existen para la cadena $s= x1x2...x100$?  \\
+\textcolor{red}{Respuesta:\\Hay 100 sub-cadenas de longitud 1, 99 sub-cadenas de longitud 2, 1 sub-cadena de longitud 100, así que tenemos 100 + 99 + ...+ 1 = De i=1 hasta 100 sumatoria de i = (100)(101)/2 =5050 sub-cadenas no vacías en total
+}\\
