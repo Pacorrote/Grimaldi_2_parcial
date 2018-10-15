@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{Ejcicios de Grimaldi}
+\author{AUTOR }
+\date{October 2018}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{color}
+\begin{document}
+\maketitle
+\section{Capitulo 5}Relaciones y funciones.\\
+1.  Si $\mu =N, A=(1,2,3,4), B=(2,5) y C=(3,4,7),$Determine AXB; BXA;\\
+\textcolor{red}{Respuesta:\\AXB:\\
+$
+\left(\begin{smallmatrix}
+(1,2),(1,5),(2,2),(2,5),(3,2),(3,5),(4,2),(4,5)
+\end{smallmatrix}\right)
+$\\
+BXA:\\
+$
+\left(\begin{smallmatrix}
+(2,1),(2,2),(2,3),(2,4),(5,1),(5,2),(5,3),(5,4)
+\end{smallmatrix}\right)
+$
+}\\
+2. Con los valores anteriores determine (AUB)XC\\
+\textcolor{red}{Respuesta:\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$
+}\\
+3. Determine (AXC)U(BXC) con los valores anteriores.\\
+\textcolor{red}{Respuesta:\\
+AXC:\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7)
+\end{smallmatrix}\right)
+$\\
+BXC:\\
+$
+\left(\begin{smallmatrix}
+(2,3),(2,4),(2,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$\\
+(AXC)U(BXC):\\
+$
+\left(\begin{smallmatrix}
+(1,3),(1,4),(1,7),(2,3),(2,4),(2,7),(3,3),(3,4),(3,7),(4,3),(4,4),(4,7),(5,3),(5,4),(5,7)
+\end{smallmatrix}\right)
+$
+}
+4. Si $\mu = (1,2,3,4,5) , A=(1,2,3) y B=(2,4,5)$ de ejemplos de tres relaciones no vacías de A en B.\\
+\textcolor{red}{Respuesta:\\AXB:\\
+$
+\left(\begin{smallmatrix}
+(1,2),(1,4),(1,5)
+\end{smallmatrix}\right)
+$
+}\\
+5. Si $\mu = (1,2,3,4,5) , A=(1,2,3) y B=(2,4,5)$ de ejemplos de tres relaciones binarias no vacías en A.\\
+\textcolor{red}{Respuesta:\\
+$
+\left(\begin{smallmatrix}
+(1,1),(1,2),(1,3)
+\end{smallmatrix}\right)
+$
+}\\
+6. Sea $A=(1,2,4,8,16) y B=(1,2,3,4,5,6,7) si (2-x,5),(4,y-2) \epsilon AXB,$¿Se cumple que $(2-x,5)=(4,y-2)$?\\
+\textcolor{red}{Respuesta:\\se igualan las coordenadas\\$2-x=4 y 5=y-2\\2-4 , 5+2=y\\-2=x , 7=y;$ por lo tanto se cumple para $x=-2 y y=7$
+}\\
+7. Sea $A_1=(0,1,2,3,n),A_2=(1,2,3,7,12),A_3=(0,1,2,4,8,16,32) y A_4(-3,-2,-1,0,1,2,3)$\\Sea $R_1 \leq A_1 X A_2 X A_3 X A_4 donde R_1=(w,x,y,z)$ ¿Cuantos $4-uplas$ ordenadas o cuaternas hay en una relación?\\
+\textcolor{red}{Respuesta:\\$WXYZ= 0$ si y solo si por lo menos uno de los 4 números son 0, entonces se agarra los pares con una coordenada 0, por lo tanto el resultado es de $196+5(4)=216$
+}\\
+8. Sea $A_1=(0,1,2,3,n),A_2=(1,2,3,7,12),A_3=(0,1,2,4,8,16,32) y A_4(-3,-2,-1,0,1,2,3)$\\SI $2_2 \subset A_1 X A_2 X A_3 X A_4$ es la relación cuaternaria donde $(a,b,c,d \epsilon R_2)$ si x solo si abcd $\prec 0$ ¿Cuánto vale $R_2$\\
+\textcolor{red}{Respuesta:\\
+En este caso es similar al anterior como en el conjunto $A_4$ existe 3 números negativos entonces seria $72(4)=288$
+}\\
+9. Para cuales conjuntos A,B,C $\mu$ es verdadero $AXB=BXA$\\
+\textcolor{red}{Respuesta:\\
+$AXB=BXA si y solo si A=B$
+}\\
+10. Si $\mu=\re$, haya un esquema de la relación $((x,y) y x^2+y^2=4)$¿Qué sucede si U es $\re+$?\\
+\textcolor{red}{Respuesta:\\
+$x^2+y^2$ es una ecuación de la circunferencia con centro en el origen y radio de 2, por lo tanto se se toma los reales positivos, se generaría un semicírculo.
+}
